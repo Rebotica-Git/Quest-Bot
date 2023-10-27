@@ -3,6 +3,7 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 from sqlalchemy import Column, Integer, String, Boolean, PickleType
 from loguru import logger
 
+logger.remove()
 
 class DB:
     @logger.catch
